@@ -1,0 +1,31 @@
+// Global variables
+:root {
+  // Colors
+  --color-midnight: #000;
+  --color-purple: #7e7ec2;
+  --color-purple--darker: #adabef;
+  --color-blue--darkest: #465577;
+  --color-orange: #f9b233;
+  --color-orange--darker: #ce932e;
+  --color-red: #b73b3b;
+
+  // Spacing
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 56px;
+  --spacing-9: 64px;
+  --spacing-10: 80px;
+  --spacing-11: 120px;
+
+  // Animations
+  --transition: 0.2s cubic-bezier(0, 0, 0.3, 0.9);
+  --transition-quick: 0.1s cubic-bezier(0, 0, 0.3, 0.9);
+
+  // Settings
+  --border-radius: 20px;
+}
