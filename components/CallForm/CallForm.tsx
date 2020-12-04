@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 
 import sleep from "utils/sleep";
@@ -18,7 +19,6 @@ const CallForm = (): JSX.Element => {
     setIsSubmitting(true);
 
     // Get value from form
-    // @ts-ignore
     const number = event.target.elements.number.value;
 
     // await sleep(5000);
