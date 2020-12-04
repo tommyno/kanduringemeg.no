@@ -1,8 +1,6 @@
 // @ts-nocheck
 import { useState } from "react";
 
-import sleep from "utils/sleep";
-
 import Spinner from "components/Spinner";
 
 import styles from "./CallForm.module.scss";
@@ -20,8 +18,6 @@ const CallForm = (): JSX.Element => {
 
     // Get value from form
     const number = event.target.elements.number.value;
-
-    // await sleep(5000);
 
     // Send number to API
     const url = `/api/call/${number}`;
