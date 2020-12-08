@@ -30,6 +30,18 @@ class CallMeDocument extends Document {
           />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <link
+            rel="preload"
+            href="/fonts/Quicksand-Regular.woff2"
+            as="font"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Quicksand-Bold.woff2"
+            as="font"
+            crossOrigin="anonymous"
+          />
         </Head>
         <body>
           <Main />
