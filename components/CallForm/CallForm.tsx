@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { useState } from "react";
 
 import Spinner from "components/Spinner";
@@ -11,13 +10,18 @@ const CallForm = (): JSX.Element => {
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = async (event: React.FormEvent<HTMLInputElement>) => {
+  const handleSubmit = async (
+    event: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    // Get value from form
+    const target = (event.target as HTMLFormElement).elements.namedItem(
+      "number"
+    );
+    const number: string = (target as HTMLInputElement)?.value;
+
     event.preventDefault();
     setErrorMessage("");
     setIsSubmitting(true);
-
-    // Get value from form
-    const number = event.target.elements.number.value;
 
     // Send number to API
     const url = `/api/call/${number}`;
