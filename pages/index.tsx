@@ -9,9 +9,13 @@ const IndexPage = (): JSX.Element => {
         <title>Kan du ringe meg?</title>
         <meta
           name="description"
-          content="Få hjelp når telefonen ligger gjemt i sofaen eller jakkelomma"
+          content="Få hjelp når telefonen ligger gjemt i sofaen eller jakkelomma."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:image"
+          content="https://kanduringemeg.no/illustration.svg"
+        />
       </Head>
 
       <section className="wrap">
@@ -20,8 +24,9 @@ const IndexPage = (): JSX.Element => {
         <div>
           <CallForm />
           <img
-            src="/searching-dark.svg"
+            src="/illustration.png"
             alt="Detektiv med forstørrelsesglass og hund"
+            className="illustration"
           />
         </div>
 
