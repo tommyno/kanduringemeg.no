@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Say voice="alice" language="no">Hei, så bra at du fant telefonen! Peace out.</Say>
+  <Say voice="alice">Hei, så bra at du fant telefonen! Peace out.</Say>
 </Response>
