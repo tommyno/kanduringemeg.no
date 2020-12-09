@@ -38,7 +38,7 @@ const Number = async (
     const message = {
       To: `+47${parsedNumber}`,
       From: process.env.FROM_NUMBER,
-      Url: "http://demo.twilio.com/docs/voice.xml"
+      Url: "https://kanduringemeg.no/voice.xml"
     };
     const formData = querystring.stringify(message);
 
